@@ -1,14 +1,15 @@
-import { Pokemon } from "../PokemonFactory";
 import { PokemonType } from "../PokemonTypes";
 import { StarterPokemon } from "./StarterPokemon";
+import { PokemonBase } from "./PokemonBase";
 
-export class Bulbasaur implements Pokemon {
+export class Bulbasaur extends PokemonBase {
     name: string;
     hp: number;
     type: PokemonType;
     attackPower: number;
 
     constructor(){
+        super();
         this.name = StarterPokemon.Bulbasaur;
         this.hp = 45;
         this.type = PokemonType.Grass;

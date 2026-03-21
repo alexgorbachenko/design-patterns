@@ -9,6 +9,9 @@ export interface Pokemon {
     type: PokemonType;
     hp: number;
     attackPower: number;
+    attack: () => void;
+    defend: (damage: number) => void;
+    isAlive: () => boolean;
 }
 
 export class PokemonFactory {

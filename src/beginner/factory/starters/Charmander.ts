@@ -1,14 +1,15 @@
-import { Pokemon } from "../PokemonFactory";
 import { PokemonType } from "../PokemonTypes";
 import { StarterPokemon } from "./StarterPokemon";
+import { PokemonBase } from "./PokemonBase";
 
-export class Charmander implements Pokemon {
+export class Charmander extends PokemonBase {
     name: string;
-    hp: number;
     type: PokemonType;
     attackPower: number;
+    hp: number;
 
     constructor(){
+        super();
         this.name = StarterPokemon.Charmander;
         this.hp = 39;
         this.type = PokemonType.Fire;

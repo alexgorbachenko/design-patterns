@@ -10,6 +10,7 @@ test('Creates Charmander correctly', () => {
     expect(charmander.type).toBe(PokemonType.Fire);
     expect(charmander.hp).toBe(39);
     expect(charmander.attackPower).toBe(52);
+    expect(charmander.isAlive()).toBeTruthy;
 });
 
 test('Creates Squirtle correctly', () => {
@@ -19,6 +20,7 @@ test('Creates Squirtle correctly', () => {
     expect(squirtle.type).toBe(PokemonType.Water);
     expect(squirtle.hp).toBe(44);
     expect(squirtle.attackPower).toBe(48);
+    expect(squirtle.isAlive()).toBeTruthy;
 });
 
 test('Creates Bulbasaur correctly', () => {
@@ -28,6 +30,13 @@ test('Creates Bulbasaur correctly', () => {
     expect(bulbasaur.type).toBe(PokemonType.Grass);
     expect(bulbasaur.hp).toBe(45);
     expect(bulbasaur.attackPower).toBe(49);
+    expect(bulbasaur.isAlive()).toBeTruthy;
+});
+
+test('IsAlive false when HP is 0 or less', () => {
+    const bulbasaur = PokemonFactory.create(StarterPokemon.Bulbasaur);
+    bulbasaur.defend(50);
+    expect(bulbasaur.isAlive()).toBeFalsy;
 });
 
 test('Throws error when invalid Pokemon', () => {
