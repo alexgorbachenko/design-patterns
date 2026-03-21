@@ -1,0 +1,30 @@
+{
+  "name": "design-patterns",
+  "version": "1.0.0",
+  "description": "Collection of design patterns written in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexgorbachenko/design-patterns.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexgorbachenko/design-patterns/issues"
+  },
+  "homepage": "https://github.com/alexgorbachenko/design-patterns#readme",
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-typescript": "^7.28.5",
+    "@types/node": "^25.5.0",
+    "babel-jest": "^30.3.0",
+    "jest": "^30.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
