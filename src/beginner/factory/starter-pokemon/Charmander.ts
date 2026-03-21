@@ -1,12 +1,12 @@
-import { PokemonType } from "../PokemonTypes";
+import { PokemonType } from "./PokemonTypes";
 import { StarterPokemon } from "./StarterPokemon";
 import { PokemonBase } from "./PokemonBase";
 
 export class Charmander extends PokemonBase {
     name: string;
+    hp: number;
     type: PokemonType;
     attackPower: number;
-    hp: number;
 
     constructor(){
         super();

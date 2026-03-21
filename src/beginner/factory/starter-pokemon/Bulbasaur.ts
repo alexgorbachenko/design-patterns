@@ -1,4 +1,4 @@
-import { PokemonType } from "../PokemonTypes";
+import { PokemonType } from "./PokemonTypes";
 import { StarterPokemon } from "./StarterPokemon";
 import { PokemonBase } from "./PokemonBase";
 

@@ -1,8 +1,9 @@
 import { Pokemon } from "../PokemonFactory";
+import { PokemonType } from "./PokemonTypes";
 
 export abstract class PokemonBase implements Pokemon {
     abstract name: string;
-    abstract type: any;
+    abstract type: PokemonType;
     abstract attackPower: number;
     abstract hp: number;
 

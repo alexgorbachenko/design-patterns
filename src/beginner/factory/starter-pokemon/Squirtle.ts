@@ -1,4 +1,4 @@
-import { PokemonType } from "../PokemonTypes";
+import { PokemonType } from "./PokemonTypes";
 import { StarterPokemon } from "./StarterPokemon";
 import { PokemonBase } from "./PokemonBase";
 
@@ -19,13 +19,4 @@ export class Squirtle extends PokemonBase {
     attack = () => {
         console.log(`${this.name} used Water Blast! It deals ${this.attackPower} damage.`);
     }
-
-    defend = (damage: number) => {
-        this.hp -= damage;
-        console.log(`${this.name} took ${damage} damage! Remaining HP: ${this.hp}`);
-    }
-
-    isAlive = () => {
-        return this.hp > 0;
-    };
 }

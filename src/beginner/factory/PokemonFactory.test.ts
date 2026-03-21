@@ -1,7 +1,7 @@
 import { expect, test } from '@jest/globals';
-import { PokemonFactory } from '../PokemonFactory';
-import { StarterPokemon } from '../starters/StarterPokemon';
-import { PokemonType } from '../PokemonTypes';
+import { PokemonFactory } from './PokemonFactory';
+import { StarterPokemon } from './starter-pokemon/StarterPokemon';
+import { PokemonType } from './starter-pokemon/PokemonTypes';
 
 test('Creates Charmander correctly', () => {
     const charmander = PokemonFactory.create(StarterPokemon.Charmander);

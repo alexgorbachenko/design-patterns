@@ -1,8 +1,8 @@
-import { PokemonType } from "./PokemonTypes";
-import { Bulbasaur } from "./starters/Bulbasaur";
-import { Charmander } from "./starters/Charmander";
-import { Squirtle } from "./starters/Squirtle";
-import { StarterPokemon } from "./starters/StarterPokemon";
+import { PokemonType } from "./starter-pokemon/PokemonTypes";
+import { Bulbasaur } from "./starter-pokemon/Bulbasaur";
+import { Charmander } from "./starter-pokemon/Charmander";
+import { Squirtle } from "./starter-pokemon/Squirtle";
+import { StarterPokemon } from "./starter-pokemon/StarterPokemon";
 
 export interface Pokemon {
     name: string;
