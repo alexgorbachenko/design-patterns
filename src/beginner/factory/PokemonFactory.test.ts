@@ -42,3 +42,14 @@ test('IsAlive false when HP is 0 or less', () => {
 test('Throws error when invalid Pokemon', () => {
     expect(() => PokemonFactory.create('Test')).toThrow('Unknown Pokemon: Test');
 });
+
+test('Returns a different instance each call', () => {
+    const a = PokemonFactory.create(StarterPokemon.Charmander);
+    const b = PokemonFactory.create(StarterPokemon.Charmander);
+    expect(a).not.toBe(b);
+});
+
+test("logs an attack message without throwing", () => {
+    const p = PokemonFactory.create(StarterPokemon.Charmander);
+    expect(() => p.attack()).not.toThrow();
+});
